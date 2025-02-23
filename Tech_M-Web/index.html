@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">🏋️ Fitness Tracker</div>
+        <ul class="nav-links">
+            <li><a href="#goal-setting">Set Goal</a></li>
+            <li><a href="#workout-logs">Log Workouts</a></li>
+            <li><a href="#progress-tracker">Progress Tracker</a></li>
+        </ul>
+    </nav>
+    <header class="hero">
+        <video autoplay loop muted playsinline class="background-video">
+            <source src="3196220-uhd_3840_2160_25fps.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="hero-content">
+            <h1>Track Your Fitness Goals</h1>
+            <p>Stay motivated and achieve your best version.</p>
+        </div>
+    </header>
+    <section id="goal-setting">
+        <h2>Set Your Goal</h2>
+        <form id="goalForm">
+            <input type="number" id="goal" placeholder="Enter daily steps goal" required>
+            <button type="submit">Set Goal</button>
+        </form>
+        <p id="goalMessage"></p>
+    </section>
+    <section id="progress-tracker">
+        <h2>Progress Tracker</h2>
+        <label for="stepsWalked">Steps Walked Today:</label>
+        <input type="number" id="stepsWalked" min="0" placeholder="Enter steps walked">
+        <button onclick="updateProgress()">Update Progress</button>
+        <div class="progress-container">
+            <div class="progress-bar" id="progressBar">
+                <span id="progressPercentage">0%</span>
+            </div>
+        </div>
+        <p id="progressMessage"></p>
+    </section>
+    <section id="workout-logs">
+        <h2>Log Your Workouts</h2>
+        <form id="logForm">
+            <input type="text" id="workoutType" placeholder="Workout Type" required>
+            <input type="number" id="duration" placeholder="Duration (min)" required>
+            <button type="submit">Log Workout</button>
+        </form>
+        <ul id="workoutList"></ul>
+    </section>
+    <section id="workout-history">
+        <h2>Workout History</h2>
+        <ul id="historyList"></ul>
+    </section>
+    <section id="workout-gallery">
+        <h2>Workout Gallery</h2>
+        <div class="gallery-container">
+            <div class="gallery-wrapper">
+                <img src="img1.jpg" class="gallery-img" alt="Workout 1">
+                <img src="img2.jpg" class="gallery-img" alt="Workout 2">
+                <img src="img3.jpg" class="gallery-img" alt="Workout 3">
+                <img src="img4.jpg" class="gallery-img" alt="Workout 4">
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2025 Fitness Tracker. Stay Fit, Stay Healthy.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
