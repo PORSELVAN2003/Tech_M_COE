@@ -1,0 +1,17 @@
+[
+  {
+    "busNumber": "101",
+    "location": "Bangalore - MG Road",
+    "timestamp": "10:30 AM"
+  },
+  {
+    "busNumber": "202",
+    "location": "Chennai - T. Nagar",
+    "timestamp": "11:15 AM"
+  },
+  {
+    "busNumber": "303",
+    "location": "Delhi - Connaught Place",
+    "timestamp": "12:00 PM"
+  }
+]
