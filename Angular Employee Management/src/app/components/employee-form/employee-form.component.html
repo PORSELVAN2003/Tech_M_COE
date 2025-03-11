@@ -1,0 +1,28 @@
+
+
+
+   <form [formGroup]="employeeForm" (ngSubmit)="onSubmit()">
+    <label for="name">Name:</label>
+    <input id="name" formControlName="name" type="text" required />
+  
+    <label for="email">Email:</label>
+    <input id="email" formControlName="email" type="email" required />
+  
+    <label for="department">Department:</label>
+    <input id="department" formControlName="department" type="text" required />
+  
+    <label for="position">Position:</label>
+    <input id="position" formControlName="position" type="text" required />
+  
+    <label for="salary">Salary:</label>
+    <input id="salary" formControlName="salary" type="number" required />
+  
+    <label for="joinDate">Join Date:</label>
+    <input id="joinDate" formControlName="joinDate" type="date" />
+  
+    <label for="rating">Rating (1-5):</label>
+    <input id="rating" formControlName="rating" type="number" min="1" max="5" required />
+  
+    <button type="submit">Submit</button>
+  </form>
+  
